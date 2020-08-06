@@ -4,8 +4,6 @@ import { connect } from "react-redux";
 import { getTodosByVisibilityFilter } from "./store/selectors";
 
 const ToDoList =({todos})=>{
-    //const todos =[1,2,3]
-    console.log(todos);
     return(
        <ul className={"todo-list"}>
            {

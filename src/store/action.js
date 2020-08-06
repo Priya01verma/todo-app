@@ -12,7 +12,7 @@ export const addToDo = content =>(
     }
 )
 
-export const toggleToDo = id =>(
+export const toggleTodo = id => (
     {
         type : TOGGLE_TODO,
         payload: { id }

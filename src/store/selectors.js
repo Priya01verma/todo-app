@@ -7,7 +7,6 @@ export const getTodoList = store => (
 );
 
 export const getTodoById = (store, id) => (
-    console.log({ checkToDosValue: store.todos }),
     store && store.todos && store.todos.byIds ? {...store.todos.byIds[id] , id} : {}
 )
 

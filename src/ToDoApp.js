@@ -2,7 +2,7 @@ import React from 'react';
 import "./styles.css";
 import AddToDo from './AddToDo';
 import ToDoList from './ToDoList';
-
+import VisibilityFilters from './VisibilityFilters';
 
 const ToDoApp =() =>{
     return(
@@ -10,6 +10,7 @@ const ToDoApp =() =>{
             <h2>ToDo List</h2>
             <AddToDo/>
             <ToDoList />
+            <VisibilityFilters/>
         </div>
     )
 }
