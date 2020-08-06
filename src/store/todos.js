@@ -8,17 +8,18 @@ export default function(state = initialState, action){
     switch(action.type){
         case ADD_TODO:{
             const {id, content} = action.payload;
-            console.log({checFunction: "Function called", checkValues : action.payload});
-            return{
+            console.log({checkIds: id , contentValue : content })
+            return {
                 ...state,
-                allIds:[...state.allIds, id],
-                byIds:{
-                    [id] :{
+                allIds: [...state.allIds, id],
+                byIds: {
+                    ...state.byIds,
+                    [id]: {
                         content,
-                        completed: false
-                    }
-                }
-            }
+                        completed: false,
+                    },
+                },
+            };
         }
         default: return state;
     }

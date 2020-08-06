@@ -11,3 +11,17 @@ export const addToDo = content =>(
           }
     }
 )
+
+export const toggleToDo = id =>(
+    {
+        type : TOGGLE_TODO,
+        payload: { id }
+    }
+)
+
+export const setFilter =(filter) =>(
+    {
+        type : SET_FILTER,
+        payload: { filter }
+    }
+)
